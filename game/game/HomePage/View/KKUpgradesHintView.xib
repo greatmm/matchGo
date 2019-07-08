@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KKUpgradesView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5z-eC-tHu">
+                    <rect key="frame" x="30" y="116.5" width="315" height="434"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upgrade" translatesAutoresizingMaskIntoConstraints="NO" id="Y6U-7e-Nfg">
+                            <rect key="frame" x="0.0" y="0.0" width="315" height="258.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Y6U-7e-Nfg" secondAttribute="height" multiplier="562:462" id="39i-MF-N1d"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21Q-hq-bBJ">
+                            <rect key="frame" x="10" y="375" width="295" height="49"/>
+                            <color key="backgroundColor" red="0.16078431369999999" green="0.76078431369999999" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="49" id="4xZ-HE-LxI"/>
+                            </constraints>
+                            <viewLayoutGuide key="safeArea" id="lLv-4n-95M"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="立即更新"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="clickUpgradesBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="bsq-QY-UYf"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发现新版本" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7T-ts-1fX">
+                            <rect key="frame" x="116.5" y="278.5" width="82" height="19.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <color key="textColor" red="0.078431372549019607" green="0.098039215686274508" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpx-a1-Vdq">
+                            <rect key="frame" x="20" y="318" width="275" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.078431372549019607" green="0.098039215686274508" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dQ-ub-afV">
+                            <rect key="frame" x="287" y="0.0" width="28" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="28" id="gDg-4N-6ZQ"/>
+                                <constraint firstAttribute="height" constant="28" id="igx-Fq-U2i"/>
+                            </constraints>
+                            <state key="normal" image="rightTopClose"/>
+                            <connections>
+                                <action selector="clickCloseBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="ggs-CU-85U"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="21Q-hq-bBJ" firstAttribute="centerX" secondItem="l5z-eC-tHu" secondAttribute="centerX" id="40Z-UM-0IG"/>
+                        <constraint firstAttribute="trailing" secondItem="7dQ-ub-afV" secondAttribute="trailing" id="6WT-gH-FCC"/>
+                        <constraint firstItem="21Q-hq-bBJ" firstAttribute="leading" secondItem="l5z-eC-tHu" secondAttribute="leading" constant="10" id="8Vi-Fj-QWz"/>
+                        <constraint firstItem="Lpx-a1-Vdq" firstAttribute="top" secondItem="h7T-ts-1fX" secondAttribute="bottom" constant="20" id="9FK-cL-Usf"/>
+                        <constraint firstItem="h7T-ts-1fX" firstAttribute="centerX" secondItem="l5z-eC-tHu" secondAttribute="centerX" id="Auc-zk-KGe"/>
+                        <constraint firstItem="21Q-hq-bBJ" firstAttribute="top" secondItem="Lpx-a1-Vdq" secondAttribute="bottom" constant="40" id="Pha-Fz-ZtG"/>
+                        <constraint firstItem="Y6U-7e-Nfg" firstAttribute="top" secondItem="l5z-eC-tHu" secondAttribute="top" id="d1j-vI-gvx"/>
+                        <constraint firstItem="Lpx-a1-Vdq" firstAttribute="leading" secondItem="l5z-eC-tHu" secondAttribute="leading" constant="20" id="dIf-WA-yHm"/>
+                        <constraint firstItem="Y6U-7e-Nfg" firstAttribute="leading" secondItem="l5z-eC-tHu" secondAttribute="leading" id="gFq-U5-9gZ"/>
+                        <constraint firstAttribute="trailing" secondItem="Y6U-7e-Nfg" secondAttribute="trailing" id="luY-kY-ybh"/>
+                        <constraint firstAttribute="bottom" secondItem="21Q-hq-bBJ" secondAttribute="bottom" constant="10" id="lwX-ui-ig9"/>
+                        <constraint firstItem="h7T-ts-1fX" firstAttribute="top" secondItem="Y6U-7e-Nfg" secondAttribute="bottom" constant="20" id="neT-hc-oPE"/>
+                        <constraint firstItem="7dQ-ub-afV" firstAttribute="top" secondItem="l5z-eC-tHu" secondAttribute="top" id="rQP-En-UiK"/>
+                        <constraint firstAttribute="trailing" secondItem="Lpx-a1-Vdq" secondAttribute="trailing" constant="20" id="u1H-EF-7NM"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.078431372549019607" green="0.098039215686274508" blue="0.11764705882352941" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="l5z-eC-tHu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="5dZ-u3-o9N"/>
+                <constraint firstItem="l5z-eC-tHu" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MXQ-eA-BSV"/>
+                <constraint firstItem="l5z-eC-tHu" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="cNZ-sI-HeI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="closeBtn" destination="7dQ-ub-afV" id="UOc-fK-gJ8"/>
+                <outlet property="subtitleLabel" destination="Lpx-a1-Vdq" id="X7S-nh-PcH"/>
+                <outlet property="titleLabel" destination="h7T-ts-1fX" id="29Z-Kb-dyU"/>
+            </connections>
+            <point key="canvasLocation" x="55.200000000000003" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="rightTopClose" width="28" height="28"/>
+        <image name="upgrade" width="562" height="426"/>
+    </resources>
+</document>

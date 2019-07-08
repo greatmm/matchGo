@@ -1,0 +1,57 @@
+platform :ios, '9.0'
+
+target ‘game’ do
+
+pod 'AFNetworking'
+
+pod 'SDWebImage'
+
+pod 'MJRefresh'
+
+pod 'MJExtension'
+
+pod 'SDCycleScrollView'
+
+pod 'SocketRocket'
+
+pod 'UMCCommon'
+
+pod 'UMCSecurityPlugins'
+
+pod 'UMCAnalytics'
+
+pod 'UMCShare/Social/WeChat'
+
+pod 'UMCShare/Social/QQ'
+
+pod 'JPush'
+
+end
+
+target ‘game_debug’ do
+  
+  pod 'AFNetworking'
+  
+  pod 'SDWebImage'
+  
+  pod 'MJRefresh'
+  
+  pod 'MJExtension'
+  
+  pod 'SDCycleScrollView'
+  
+  pod 'SocketRocket'
+  
+  pod 'UMCCommon'
+  
+  pod 'UMCSecurityPlugins'
+  
+  pod 'UMCAnalytics'
+
+  pod 'UMCShare/Social/WeChat'
+
+  pod 'UMCShare/Social/QQ'
+  
+  pod 'JPush'
+  
+  end

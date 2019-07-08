@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="gamerInfoCell" id="gTV-IL-0wX" customClass="KKGamerInfoCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="213" height="243"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="213" height="243"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kAw-9e-7jY">
+                        <rect key="frame" x="0.0" y="74.5" width="213" height="94"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="赛事狗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkd-B6-bdP">
+                                <rect key="frame" x="88" y="62" width="37" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="n0y-vM-Rx9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="zKD-CO-Jpi">
+                                <rect key="frame" x="84" y="0.0" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zKD-CO-Jpi" secondAttribute="height" multiplier="1:1" id="Lma-xh-EW0"/>
+                                    <constraint firstAttribute="width" constant="45" id="WCp-7E-bah"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="胜率:59%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVb-lG-Zws">
+                                <rect key="frame" x="84" y="80" width="45" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="Fpe-wj-aox"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="hkd-B6-bdP" firstAttribute="centerX" secondItem="kAw-9e-7jY" secondAttribute="centerX" id="L4S-Lr-Ih1"/>
+                            <constraint firstItem="zKD-CO-Jpi" firstAttribute="centerX" secondItem="kAw-9e-7jY" secondAttribute="centerX" id="Rrw-tR-sL4"/>
+                            <constraint firstItem="zKD-CO-Jpi" firstAttribute="top" secondItem="kAw-9e-7jY" secondAttribute="top" id="S7j-UT-ihd"/>
+                            <constraint firstItem="AVb-lG-Zws" firstAttribute="top" secondItem="hkd-B6-bdP" secondAttribute="bottom" id="cnL-8R-233"/>
+                            <constraint firstItem="hkd-B6-bdP" firstAttribute="top" secondItem="zKD-CO-Jpi" secondAttribute="bottom" constant="17" id="nyx-My-6MS"/>
+                            <constraint firstItem="AVb-lG-Zws" firstAttribute="centerX" secondItem="kAw-9e-7jY" secondAttribute="centerX" id="rdQ-Js-zH2"/>
+                            <constraint firstAttribute="bottom" secondItem="AVb-lG-Zws" secondAttribute="bottom" id="uQU-cH-wsu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="kAw-9e-7jY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1gm-7P-nKS"/>
+                <constraint firstAttribute="trailing" secondItem="kAw-9e-7jY" secondAttribute="trailing" id="GaY-zr-UEU"/>
+                <constraint firstItem="kAw-9e-7jY" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Lb5-LO-u6h"/>
+                <constraint firstItem="kAw-9e-7jY" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="him-ne-Hjs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="213" height="243"/>
+            <connections>
+                <outlet property="gamerIcon" destination="zKD-CO-Jpi" id="4uM-B0-JRJ"/>
+                <outlet property="iconWidth" destination="WCp-7E-bah" id="h1W-mh-BPV"/>
+                <outlet property="nicknameLabel" destination="hkd-B6-bdP" id="eSO-w4-3Gr"/>
+                <outlet property="rateLabel" destination="AVb-lG-Zws" id="Jc9-35-kFg"/>
+                <outlet property="topMarginToIcon" destination="nyx-My-6MS" id="lAv-cJ-L8n"/>
+            </connections>
+            <point key="canvasLocation" x="268" y="241.52923538230885"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon" width="62" height="62"/>
+    </resources>
+</document>

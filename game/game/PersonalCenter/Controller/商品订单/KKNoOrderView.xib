@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KKNoOrderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noGoods" translatesAutoresizingMaskIntoConstraints="NO" id="kNV-op-bUt">
+                    <rect key="frame" x="102.5" y="97" width="170" height="170"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="170" id="FQ3-WH-5iL"/>
+                        <constraint firstAttribute="width" constant="170" id="pzE-Dc-kfS"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您暂无相关订单哦~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kt9-A8-2x7">
+                    <rect key="frame" x="126" y="267" width="123.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.078431372549019607" green="0.098039215686274508" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFD-7K-JYF">
+                    <rect key="frame" x="157.5" y="294" width="60" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="1xI-Bq-odQ"/>
+                        <constraint firstAttribute="height" constant="28" id="tz3-6P-vV4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="去逛逛">
+                        <color key="titleColor" red="0.078431372549019607" green="0.098039215686274508" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                            <real key="value" value="14"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderW">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderC">
+                            <color key="value" red="0.16078431369999999" green="0.76078431369999999" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickGoMallBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="nLG-qH-JEu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nFD-7K-JYF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="CXi-OS-DLn"/>
+                <constraint firstItem="kt9-A8-2x7" firstAttribute="top" secondItem="kNV-op-bUt" secondAttribute="bottom" id="RDQ-dO-PBH"/>
+                <constraint firstItem="kNV-op-bUt" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="77" id="W9H-c0-gpm"/>
+                <constraint firstItem="kt9-A8-2x7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="d9P-d4-Bu9"/>
+                <constraint firstItem="nFD-7K-JYF" firstAttribute="top" secondItem="kt9-A8-2x7" secondAttribute="bottom" constant="10" id="ecF-sd-Bwd"/>
+                <constraint firstItem="kNV-op-bUt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jij-mT-Kxl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="noGoods" width="170" height="170"/>
+    </resources>
+</document>

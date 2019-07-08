@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="topCell" id="gTV-IL-0wX" customClass="KKMallTopCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="590"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="396" height="590"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PrB-Jj-ohc">
+                        <rect key="frame" x="10" y="468" width="376" height="102"/>
+                        <subviews>
+                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HtT-F2-cGZ" customClass="UIControl">
+                                <rect key="frame" x="301" y="0.0" width="75" height="102"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="虚拟卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPl-Zp-fai">
+                                        <rect key="frame" x="18" y="70" width="34" height="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mall_card" translatesAutoresizingMaskIntoConstraints="NO" id="Ntp-qs-hfb">
+                                        <rect key="frame" x="20" y="22" width="31" height="40"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="7kt-Wx-K0r"/>
+                                    <constraint firstItem="IPl-Zp-fai" firstAttribute="centerX" secondItem="Ntp-qs-hfb" secondAttribute="centerX" id="7wM-fO-xHx"/>
+                                    <constraint firstItem="IPl-Zp-fai" firstAttribute="leading" secondItem="HtT-F2-cGZ" secondAttribute="leading" constant="18" id="8Qf-vm-Y3L"/>
+                                    <constraint firstAttribute="bottom" secondItem="IPl-Zp-fai" secondAttribute="bottom" constant="18" id="aST-Yn-DCj"/>
+                                    <constraint firstItem="IPl-Zp-fai" firstAttribute="top" secondItem="Ntp-qs-hfb" secondAttribute="bottom" constant="8" symbolic="YES" id="zey-IU-6xt"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="clickControl:" destination="gTV-IL-0wX" eventType="touchUpInside" id="OcG-SK-bHR"/>
+                                </connections>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXX-5L-V4e" customClass="UIControl">
+                                <rect key="frame" x="225.5" y="0.0" width="75.5" height="102"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mall_sign" translatesAutoresizingMaskIntoConstraints="NO" id="INi-05-ZAR">
+                                        <rect key="frame" x="23" y="29" width="26" height="30"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="爱豆签名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBw-c8-93v">
+                                        <rect key="frame" x="13" y="70" width="45" height="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="VBw-c8-93v" firstAttribute="top" secondItem="INi-05-ZAR" secondAttribute="bottom" constant="11" id="HT4-4N-hLZ"/>
+                                    <constraint firstAttribute="height" constant="102" id="Mir-eE-oNK"/>
+                                    <constraint firstItem="INi-05-ZAR" firstAttribute="leading" secondItem="mXX-5L-V4e" secondAttribute="leading" constant="23" id="SVX-Z4-Wky"/>
+                                    <constraint firstItem="INi-05-ZAR" firstAttribute="centerX" secondItem="VBw-c8-93v" secondAttribute="centerX" id="k2c-9t-AkN"/>
+                                    <constraint firstItem="INi-05-ZAR" firstAttribute="top" secondItem="mXX-5L-V4e" secondAttribute="top" constant="29" id="qqn-sJ-7xa"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="clickControl:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Z06-VI-7vJ"/>
+                                </connections>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZj-jX-HUZ" customClass="UIControl">
+                                <rect key="frame" x="150.5" y="0.0" width="75" height="102"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mall_game" translatesAutoresizingMaskIntoConstraints="NO" id="gCe-cC-PhQ">
+                                        <rect key="frame" x="22" y="37" width="28" height="18"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="游戏周边" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEC-vc-Bgy">
+                                        <rect key="frame" x="13" y="70" width="45" height="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pEC-vc-Bgy" firstAttribute="centerX" secondItem="gCe-cC-PhQ" secondAttribute="centerX" id="U7E-kq-2Oa"/>
+                                    <constraint firstItem="pEC-vc-Bgy" firstAttribute="leading" secondItem="VZj-jX-HUZ" secondAttribute="leading" constant="13" id="UPG-NL-kXn"/>
+                                    <constraint firstAttribute="height" constant="102" id="cbW-H7-3Fk"/>
+                                    <constraint firstAttribute="bottom" secondItem="pEC-vc-Bgy" secondAttribute="bottom" constant="18" id="hke-1l-BZV"/>
+                                    <constraint firstItem="pEC-vc-Bgy" firstAttribute="top" secondItem="gCe-cC-PhQ" secondAttribute="bottom" constant="15" id="lbC-St-vHV"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="clickControl:" destination="gTV-IL-0wX" eventType="touchUpInside" id="N1y-f9-e2C"/>
+                                </connections>
+                            </view>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Idj-et-tCk" customClass="UIControl">
+                                <rect key="frame" x="75" y="0.0" width="75.5" height="102"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mall_love" translatesAutoresizingMaskIntoConstraints="NO" id="ZEz-TL-TGP">
+                                        <rect key="frame" x="23" y="30" width="27" height="29"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="女神最爱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bag-XY-6hF">
+                                        <rect key="frame" x="14" y="70" width="45" height="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Bag-XY-6hF" secondAttribute="bottom" constant="18" id="6sP-09-RJ1"/>
+                                    <constraint firstAttribute="height" constant="102" id="9lN-9j-BdU"/>
+                                    <constraint firstItem="Bag-XY-6hF" firstAttribute="top" secondItem="ZEz-TL-TGP" secondAttribute="bottom" constant="11" id="Mh6-U7-OPh"/>
+                                    <constraint firstItem="Bag-XY-6hF" firstAttribute="leading" secondItem="Idj-et-tCk" secondAttribute="leading" constant="14" id="n01-Ix-Fbn"/>
+                                    <constraint firstItem="Bag-XY-6hF" firstAttribute="centerX" secondItem="ZEz-TL-TGP" secondAttribute="centerX" id="w3j-Nh-HEX"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="clickControl:" destination="gTV-IL-0wX" eventType="touchUpInside" id="qcn-bS-VE8"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oiq-PU-UHl" customClass="UIControl">
+                                <rect key="frame" x="0.0" y="0.0" width="75" height="102"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mall_all" translatesAutoresizingMaskIntoConstraints="NO" id="Cuf-ZT-U9X">
+                                        <rect key="frame" x="25" y="33" width="22" height="22"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全部" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYM-ZE-a6E">
+                                        <rect key="frame" x="24" y="70" width="23" height="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="fYM-ZE-a6E" secondAttribute="bottom" constant="18" id="8qN-PC-occ"/>
+                                    <constraint firstItem="fYM-ZE-a6E" firstAttribute="leading" secondItem="Oiq-PU-UHl" secondAttribute="leading" constant="24" id="IWk-fo-C0U"/>
+                                    <constraint firstItem="fYM-ZE-a6E" firstAttribute="top" secondItem="Cuf-ZT-U9X" secondAttribute="bottom" constant="15" id="JwK-4P-9ei"/>
+                                    <constraint firstItem="fYM-ZE-a6E" firstAttribute="trailing" secondItem="Cuf-ZT-U9X" secondAttribute="trailing" id="Tmq-Sp-VNT"/>
+                                    <constraint firstAttribute="height" constant="102" id="nn5-0v-XD0"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="clickControl:" destination="gTV-IL-0wX" eventType="touchUpInside" id="glo-Tu-9vp"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Oiq-PU-UHl" firstAttribute="leading" secondItem="PrB-Jj-ohc" secondAttribute="leading" id="0Y8-8Z-pxG"/>
+                            <constraint firstAttribute="bottom" secondItem="mXX-5L-V4e" secondAttribute="bottom" id="A2U-qW-Ok0"/>
+                            <constraint firstAttribute="bottom" secondItem="Idj-et-tCk" secondAttribute="bottom" id="B9m-Cl-eIV"/>
+                            <constraint firstAttribute="trailing" secondItem="HtT-F2-cGZ" secondAttribute="trailing" id="BE1-41-Izb"/>
+                            <constraint firstItem="VZj-jX-HUZ" firstAttribute="leading" secondItem="Idj-et-tCk" secondAttribute="trailing" id="DXi-7A-rzp"/>
+                            <constraint firstAttribute="height" constant="102" id="I5s-DV-ZJJ"/>
+                            <constraint firstAttribute="bottom" secondItem="Oiq-PU-UHl" secondAttribute="bottom" id="KHt-dg-cZ6"/>
+                            <constraint firstItem="mXX-5L-V4e" firstAttribute="width" secondItem="Oiq-PU-UHl" secondAttribute="width" id="Mo2-tR-GjX"/>
+                            <constraint firstAttribute="bottom" secondItem="VZj-jX-HUZ" secondAttribute="bottom" id="QL1-Lf-2Ef"/>
+                            <constraint firstItem="Idj-et-tCk" firstAttribute="leading" secondItem="Oiq-PU-UHl" secondAttribute="trailing" id="U01-Qt-AWL"/>
+                            <constraint firstItem="HtT-F2-cGZ" firstAttribute="width" secondItem="Oiq-PU-UHl" secondAttribute="width" id="Wrx-e7-Z2x"/>
+                            <constraint firstItem="HtT-F2-cGZ" firstAttribute="leading" secondItem="mXX-5L-V4e" secondAttribute="trailing" id="Y6x-tD-9Lv"/>
+                            <constraint firstItem="mXX-5L-V4e" firstAttribute="leading" secondItem="VZj-jX-HUZ" secondAttribute="trailing" id="ifN-vB-noG"/>
+                            <constraint firstItem="Idj-et-tCk" firstAttribute="width" secondItem="Oiq-PU-UHl" secondAttribute="width" id="s8K-6b-gKT"/>
+                            <constraint firstItem="VZj-jX-HUZ" firstAttribute="width" secondItem="Oiq-PU-UHl" secondAttribute="width" id="t32-1T-Ui6"/>
+                            <constraint firstAttribute="bottom" secondItem="HtT-F2-cGZ" secondAttribute="bottom" id="x55-Gj-CWL"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="PrB-Jj-ohc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="SXH-sw-Uhx"/>
+                <constraint firstAttribute="trailing" secondItem="PrB-Jj-ohc" secondAttribute="trailing" constant="10" id="cH8-x9-myV"/>
+                <constraint firstAttribute="bottom" secondItem="PrB-Jj-ohc" secondAttribute="bottom" constant="20" id="eOS-3b-jET"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="396" height="590"/>
+            <point key="canvasLocation" x="-21" y="153"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="mall_all" width="22" height="22"/>
+        <image name="mall_card" width="31" height="40"/>
+        <image name="mall_game" width="28" height="18"/>
+        <image name="mall_love" width="27" height="29"/>
+        <image name="mall_sign" width="26" height="30"/>
+    </resources>
+</document>

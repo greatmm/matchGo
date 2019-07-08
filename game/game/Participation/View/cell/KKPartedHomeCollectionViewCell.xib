@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="partedHomeCVCell" id="gTV-IL-0wX" customClass="KKPartedHomeCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="432" height="121"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="432" height="121"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQz-0M-kfw">
+                        <rect key="frame" x="16" y="10" width="113" height="96"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="113" id="UQf-bw-8Av"/>
+                            <constraint firstAttribute="height" constant="96" id="UsP-MV-2Xe"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="clickGameBtn:" destination="gTV-IL-0wX" eventType="touchUpInside" id="BX4-wb-0gg"/>
+                        </connections>
+                    </button>
+                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MgM-4A-QpA" customClass="KKPartedHomeControl">
+                        <rect key="frame" x="282.5" y="10" width="133.5" height="44"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderC">
+                                <color key="value" red="0.80784313725490198" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderW">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="clickChiceControl:" destination="gTV-IL-0wX" eventType="touchUpInside" id="LWC-Ab-Ulz"/>
+                        </connections>
+                    </view>
+                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeR-lw-Axu" customClass="KKPartedHomeControl">
+                        <rect key="frame" x="139" y="62" width="133.5" height="44"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderC">
+                                <color key="value" red="0.80784313725490198" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderW">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="clickChiceControl:" destination="gTV-IL-0wX" eventType="touchUpInside" id="iav-21-aPE"/>
+                        </connections>
+                    </view>
+                    <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3N-LR-J1A" customClass="KKPartedHomeControl">
+                        <rect key="frame" x="282.5" y="62" width="133.5" height="44"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderC">
+                                <color key="value" red="0.80784313725490198" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderW">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="clickChiceControl:" destination="gTV-IL-0wX" eventType="touchUpInside" id="UzT-BG-gbj"/>
+                        </connections>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y32-Rj-iaO" customClass="KKPartedHomeControl">
+                        <rect key="frame" x="139" y="10" width="133.5" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="nea-NA-Oke"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderW">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderC">
+                                <color key="value" red="0.80784313725490198" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="clickChiceControl:" destination="gTV-IL-0wX" eventType="touchUpInside" id="V3e-bM-fHS"/>
+                        </connections>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="MgM-4A-QpA" firstAttribute="leading" secondItem="Y32-Rj-iaO" secondAttribute="trailing" constant="10" id="2Dx-WT-Psk"/>
+                <constraint firstItem="p3N-LR-J1A" firstAttribute="height" secondItem="Y32-Rj-iaO" secondAttribute="height" id="7zR-R5-byv"/>
+                <constraint firstItem="zeR-lw-Axu" firstAttribute="width" secondItem="Y32-Rj-iaO" secondAttribute="width" id="864-vI-PEv"/>
+                <constraint firstItem="Y32-Rj-iaO" firstAttribute="top" secondItem="CQz-0M-kfw" secondAttribute="top" id="BwQ-6q-NMl"/>
+                <constraint firstItem="Y32-Rj-iaO" firstAttribute="leading" secondItem="CQz-0M-kfw" secondAttribute="trailing" constant="10" id="Gwd-eR-e3g"/>
+                <constraint firstItem="MgM-4A-QpA" firstAttribute="width" secondItem="Y32-Rj-iaO" secondAttribute="width" id="HBQ-sn-Glu"/>
+                <constraint firstItem="p3N-LR-J1A" firstAttribute="leading" secondItem="zeR-lw-Axu" secondAttribute="trailing" constant="10" id="HJz-kK-7IM"/>
+                <constraint firstItem="zeR-lw-Axu" firstAttribute="height" secondItem="Y32-Rj-iaO" secondAttribute="height" id="Ii7-di-pRw"/>
+                <constraint firstItem="p3N-LR-J1A" firstAttribute="trailing" secondItem="MgM-4A-QpA" secondAttribute="trailing" id="KSL-8W-sWU"/>
+                <constraint firstItem="zeR-lw-Axu" firstAttribute="bottom" secondItem="CQz-0M-kfw" secondAttribute="bottom" id="MHy-df-Nbt"/>
+                <constraint firstItem="zeR-lw-Axu" firstAttribute="leading" secondItem="Y32-Rj-iaO" secondAttribute="leading" id="NWZ-tg-cEx"/>
+                <constraint firstItem="p3N-LR-J1A" firstAttribute="width" secondItem="Y32-Rj-iaO" secondAttribute="width" id="QrS-5L-oxp"/>
+                <constraint firstItem="CQz-0M-kfw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="Rou-eA-Mq8"/>
+                <constraint firstItem="MgM-4A-QpA" firstAttribute="top" secondItem="Y32-Rj-iaO" secondAttribute="top" id="e0c-Da-w5U"/>
+                <constraint firstAttribute="trailing" secondItem="MgM-4A-QpA" secondAttribute="trailing" constant="16" id="flt-mj-eDC"/>
+                <constraint firstItem="p3N-LR-J1A" firstAttribute="bottom" secondItem="zeR-lw-Axu" secondAttribute="bottom" id="lLZ-ue-yQf"/>
+                <constraint firstItem="CQz-0M-kfw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="rmI-0a-gy9"/>
+                <constraint firstItem="MgM-4A-QpA" firstAttribute="height" secondItem="Y32-Rj-iaO" secondAttribute="height" id="uu4-9S-Y6y"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="432" height="121"/>
+            <connections>
+                <outlet property="gameBtn" destination="CQz-0M-kfw" id="V3c-tP-b5C"/>
+                <outletCollection property="controlArr" destination="Y32-Rj-iaO" id="J4e-Vm-tgQ"/>
+                <outletCollection property="controlArr" destination="MgM-4A-QpA" id="23U-Y6-8Vt"/>
+                <outletCollection property="controlArr" destination="zeR-lw-Axu" id="Xf2-XW-1M2"/>
+                <outletCollection property="controlArr" destination="p3N-LR-J1A" id="1Br-mB-kfS"/>
+            </connections>
+            <point key="canvasLocation" x="443.19999999999999" y="186.65667166416793"/>
+        </collectionViewCell>
+    </objects>
+</document>

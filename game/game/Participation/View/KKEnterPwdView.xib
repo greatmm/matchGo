@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="bahnschrift.ttf">
+            <string>Bahnschrift</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KKEnterPwdView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zL5-xK-qOA">
+                    <rect key="frame" x="66.666666666666686" y="181" width="281" height="374"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enterpwdHint" translatesAutoresizingMaskIntoConstraints="NO" id="3bW-21-uYv">
+                            <rect key="frame" x="0.0" y="0.0" width="281" height="213"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="3bW-21-uYv" secondAttribute="height" multiplier="281:213" id="HQy-GJ-e3e"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dtk-Cd-w6s">
+                            <rect key="frame" x="253" y="0.0" width="28" height="28"/>
+                            <state key="normal" image="rightTopClose">
+                                <color key="titleColor" red="0.078431372549019607" green="0.098039215686274508" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickCaneclBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="lMg-Zr-DFY"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入房间号" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSm-nb-hgw">
+                            <rect key="frame" x="94.333333333333314" y="229" width="92" height="22"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" red="0.062745098039215685" green="0.11372549019607843" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LRQ-zG-cVd" customClass="UIControl">
+                            <rect key="frame" x="10" y="271" width="261" height="34"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeJ-YT-kEM">
+                                    <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="34" id="2yJ-mr-5I8"/>
+                                        <constraint firstAttribute="width" constant="34" id="yIE-Vb-wlY"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Bahnschrift" family="Bahnschrift" pointSize="20"/>
+                                    <color key="textColor" red="0.16078431369999999" green="0.76078431369999999" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderW">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderC">
+                                            <color key="value" red="0.94117647058823528" green="0.94117647058823528" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ark-va-N8A">
+                                    <rect key="frame" x="49" y="0.0" width="34" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="34" id="a84-cs-oJQ"/>
+                                        <constraint firstAttribute="width" constant="34" id="baz-WC-GDJ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Bahnschrift" family="Bahnschrift" pointSize="20"/>
+                                    <color key="textColor" red="0.16078431369999999" green="0.76078431369999999" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderW">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderC">
+                                            <color key="value" red="0.94117647058823528" green="0.94117647058823528" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVv-pB-STC">
+                                    <rect key="frame" x="129" y="0.0" width="34" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="34" id="Jbg-hG-JQa"/>
+                                        <constraint firstAttribute="width" constant="34" id="peZ-l0-dlC"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Bahnschrift" family="Bahnschrift" pointSize="20"/>
+                                    <color key="textColor" red="0.16078431369999999" green="0.76078431369999999" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderW">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderC">
+                                            <color key="value" red="0.94117647058823528" green="0.94117647058823528" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXM-6A-oMT">
+                                    <rect key="frame" x="178" y="0.0" width="34" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="34" id="Ucq-FX-xxF"/>
+                                        <constraint firstAttribute="width" constant="34" id="ehd-N3-PFw"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Bahnschrift" family="Bahnschrift" pointSize="20"/>
+                                    <color key="textColor" red="0.16078431369999999" green="0.76078431369999999" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderW">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderC">
+                                            <color key="value" red="0.94117647058823528" green="0.94117647058823528" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAG-Ey-2pP">
+                                    <rect key="frame" x="227" y="0.0" width="34" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="34" id="AmB-lr-ivF"/>
+                                        <constraint firstAttribute="height" constant="34" id="kcj-am-iZj"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Bahnschrift" family="Bahnschrift" pointSize="20"/>
+                                    <color key="textColor" red="0.16078431369999999" green="0.76078431369999999" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderW">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderC">
+                                            <color key="value" red="0.94117647058823528" green="0.94117647058823528" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G7f-Ha-0M8">
+                                    <rect key="frame" x="98.999999999999986" y="16" width="16" height="2"/>
+                                    <color key="backgroundColor" red="0.16078431369999999" green="0.76078431369999999" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="16" id="GPu-vx-hOA"/>
+                                        <constraint firstAttribute="height" constant="2" id="I3h-Sl-hvf"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="aAG-Ey-2pP" secondAttribute="trailing" id="1Uo-pB-VQz"/>
+                                <constraint firstItem="G7f-Ha-0M8" firstAttribute="centerY" secondItem="LRQ-zG-cVd" secondAttribute="centerY" id="6rD-11-INM"/>
+                                <constraint firstItem="fXM-6A-oMT" firstAttribute="top" secondItem="LRQ-zG-cVd" secondAttribute="top" id="Opt-d9-Yj2"/>
+                                <constraint firstItem="aAG-Ey-2pP" firstAttribute="top" secondItem="LRQ-zG-cVd" secondAttribute="top" id="WvV-GT-x4O"/>
+                                <constraint firstItem="SVv-pB-STC" firstAttribute="top" secondItem="LRQ-zG-cVd" secondAttribute="top" id="aaL-KY-JKa"/>
+                                <constraint firstItem="aAG-Ey-2pP" firstAttribute="leading" secondItem="fXM-6A-oMT" secondAttribute="trailing" constant="15" id="anq-6c-RVH"/>
+                                <constraint firstAttribute="height" constant="34" id="anv-CW-uJX"/>
+                                <constraint firstItem="QeJ-YT-kEM" firstAttribute="top" secondItem="LRQ-zG-cVd" secondAttribute="top" id="b09-ow-55n"/>
+                                <constraint firstItem="ark-va-N8A" firstAttribute="top" secondItem="LRQ-zG-cVd" secondAttribute="top" id="cBs-rz-Ynn"/>
+                                <constraint firstItem="fXM-6A-oMT" firstAttribute="leading" secondItem="SVv-pB-STC" secondAttribute="trailing" constant="15" id="eQh-2M-foO"/>
+                                <constraint firstItem="QeJ-YT-kEM" firstAttribute="leading" secondItem="LRQ-zG-cVd" secondAttribute="leading" id="gZa-eh-p3N"/>
+                                <constraint firstItem="G7f-Ha-0M8" firstAttribute="leading" secondItem="ark-va-N8A" secondAttribute="leading" constant="50" id="irG-Sp-voq"/>
+                                <constraint firstItem="ark-va-N8A" firstAttribute="leading" secondItem="QeJ-YT-kEM" secondAttribute="trailing" constant="15" id="pkw-vm-Q65"/>
+                            </constraints>
+                            <connections>
+                                <action selector="showKeyboard:" destination="iN0-l3-epB" eventType="touchUpInside" id="daJ-5W-5uv"/>
+                            </connections>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ke-5T-RsY">
+                            <rect key="frame" x="10" y="320" width="261" height="44"/>
+                            <color key="backgroundColor" red="0.16078431372549018" green="0.76078431372549016" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="kNi-av-9It"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                                    <real key="value" value="22"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="clickEnsureBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="tlq-dg-zs0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="3bW-21-uYv" firstAttribute="leading" secondItem="zL5-xK-qOA" secondAttribute="leading" id="1Q4-7T-SUm"/>
+                        <constraint firstAttribute="width" constant="281" id="47N-2N-C67"/>
+                        <constraint firstItem="LRQ-zG-cVd" firstAttribute="centerX" secondItem="zL5-xK-qOA" secondAttribute="centerX" id="AqI-w2-2xC"/>
+                        <constraint firstItem="LRQ-zG-cVd" firstAttribute="top" secondItem="QSm-nb-hgw" secondAttribute="bottom" constant="20" id="Azg-Kj-Tvx"/>
+                        <constraint firstItem="Dtk-Cd-w6s" firstAttribute="top" secondItem="zL5-xK-qOA" secondAttribute="top" id="DM5-qh-n5X"/>
+                        <constraint firstItem="QSm-nb-hgw" firstAttribute="top" secondItem="3bW-21-uYv" secondAttribute="bottom" constant="16" id="EtW-f7-LY0"/>
+                        <constraint firstItem="8ke-5T-RsY" firstAttribute="top" secondItem="LRQ-zG-cVd" secondAttribute="bottom" constant="15" id="Hk4-ag-vxO"/>
+                        <constraint firstAttribute="trailing" secondItem="Dtk-Cd-w6s" secondAttribute="trailing" id="IPx-jB-ft7"/>
+                        <constraint firstAttribute="trailing" secondItem="3bW-21-uYv" secondAttribute="trailing" id="bOG-EZ-58b"/>
+                        <constraint firstItem="8ke-5T-RsY" firstAttribute="leading" secondItem="zL5-xK-qOA" secondAttribute="leading" constant="10" id="eCD-yA-qjc"/>
+                        <constraint firstAttribute="bottom" secondItem="8ke-5T-RsY" secondAttribute="bottom" constant="10" id="eqh-Ff-dXY"/>
+                        <constraint firstItem="LRQ-zG-cVd" firstAttribute="leading" secondItem="zL5-xK-qOA" secondAttribute="leading" constant="10" id="fiE-Fm-B9W"/>
+                        <constraint firstItem="3bW-21-uYv" firstAttribute="top" secondItem="zL5-xK-qOA" secondAttribute="top" id="g2g-6I-LRI"/>
+                        <constraint firstItem="QSm-nb-hgw" firstAttribute="centerX" secondItem="zL5-xK-qOA" secondAttribute="centerX" id="hcj-DS-7v1"/>
+                        <constraint firstAttribute="trailing" secondItem="8ke-5T-RsY" secondAttribute="trailing" constant="10" id="kHP-Vw-4Ok"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerR">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.078431372549019607" green="0.098039215686274508" blue="0.11764705882352941" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zL5-xK-qOA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LkJ-DP-9KH"/>
+                <constraint firstItem="zL5-xK-qOA" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="VZP-aR-JJF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btmBtn" destination="8ke-5T-RsY" id="Eaz-iM-gDo"/>
+                <outlet property="centyYConst" destination="VZP-aR-JJF" id="pos-5h-9ii"/>
+                <outletCollection property="labelArr" destination="QeJ-YT-kEM" id="RhA-14-ziy"/>
+                <outletCollection property="labelArr" destination="ark-va-N8A" id="dN9-Pv-nim"/>
+                <outletCollection property="labelArr" destination="SVv-pB-STC" id="gQv-Jd-vt6"/>
+                <outletCollection property="labelArr" destination="fXM-6A-oMT" id="kpP-F9-TEs"/>
+                <outletCollection property="labelArr" destination="aAG-Ey-2pP" id="rmq-qu-qmV"/>
+            </connections>
+            <point key="canvasLocation" x="317.39130434782612" y="109.23913043478262"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="enterpwdHint" width="281" height="213"/>
+        <image name="rightTopClose" width="28" height="28"/>
+    </resources>
+</document>
